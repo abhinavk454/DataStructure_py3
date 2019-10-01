@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import time
 import random
 import matplotlib.animation as animation
-#selection sort
+#insertion sort
 def insertionsort(arr):
     for i in range(1,len(arr)):
         current=arr[i]
