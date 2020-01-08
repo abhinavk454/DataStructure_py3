@@ -1,5 +1,5 @@
 def binary_search(Array,value):
-    if len(Array==1):
+    if len(Array)==1:
         return
     else:
         midd=len(Array)//2
