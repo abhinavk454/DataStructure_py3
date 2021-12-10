@@ -14,7 +14,7 @@ def bubble(list):
             yield list
     #return list
 
-list=[12,35,1,5,425,4,542,45,54,1,24,5,2,12]
+list=[12,35,1,50,425,499,542,45,54,1,24,55555,2,12]
 bubble_generator=bubble(list)
 
 #visualization function
@@ -29,8 +29,6 @@ def update(list,rects,lteration):
     iteration[0]+=1
     text.set_text("Operation :{}".format(iteration[0]))
 animate=animation.FuncAnimation(fig,func=update,fargs=(bar_rectangle,iteration),frames=bubble_generator,interval=1,repeat=False)
-plt.xlabel('index value :->')
+plt.xlabel('Index value :->')
 plt.ylabel('Value :->')
-#plt.legend()
 plt.show()
-print(list)
